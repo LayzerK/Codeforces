@@ -19,12 +19,12 @@ def solve():
 
         if arr:
             for element in ans:
-              print(arr, ans, element)
+              #print(arr, ans, element)
               x = gcd(element, arr[-1])
               skip[x] += 2
             ans.append(arr[-1])
             arr.pop()
-    print(skip)
+    #print(skip)
     print(*ans)
         
 
