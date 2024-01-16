@@ -5,7 +5,8 @@ def multiple_ints():
 
 def solve():  
   return
-
+  # 1 2 3 4 5
+  # 2 4 
 for tc in range(int(input())):
   solve()
     
