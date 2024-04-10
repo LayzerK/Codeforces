@@ -35,7 +35,7 @@ void solve(){
   }
   bool valid = false;
 
-  for(auto num : freqs){
+  for(auto & num : freqs){
     if(num.first % mn > 0){
       valid = true;
       break;
