@@ -4,8 +4,12 @@ def multiple_ints():
   return map(int, input().strip().split())
 
 def solve():
-  return
+  n = int(input())
+  ans = 0
+  for i in range(n):
+    d = int(input())
+    ans += d % 2
+  print(ans)
 
-for tc in range(int(input())):
-  solve()
+solve()
     
