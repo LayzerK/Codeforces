@@ -4,12 +4,6 @@ void solve(){
 }
 
 int main(){
-  int tc;
-  
-  cin >> tc;
-
-  while(tc--){
-    solve();
-  }
+  solve();
   return 0;
 }
