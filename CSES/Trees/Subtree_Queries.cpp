@@ -4,13 +4,13 @@ int timer = 0;
 
 struct Fenny{
   vector<long long> bit;
-  vector<int> arr;
+  vector<int> vals;
   int size;
 
   Fenny(int n){
     this->size=n+1;
     bit.assign(n+1, 0);
-    arr.assign(n, 0);
+    vals.assign(n, 0);
   }
 
   Fenny(vector<int> const &arr) : Fenny(arr.size()){
@@ -35,13 +35,13 @@ struct Fenny{
   }
 
   void update(int idx, int delta) {
-    arr[idx] += delta;
+    vals[idx] += delta;
     for (++idx; idx < size; idx += idx & -idx)
         bit[idx] += delta;
   }
 
   void set(int idx, int new_val){
-    update(idx, new_val - arr[idx]);
+    update(idx, new_val - vals[idx]);
   }
 };
 
